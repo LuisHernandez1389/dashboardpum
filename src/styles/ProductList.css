@@ -1,0 +1,98 @@
+.table-container {
+    max-height: 400px; /* Altura máxima de la tabla */
+    overflow-y: auto; /* Habilita el desplazamiento vertical */
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  .table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .table tbody tr:hover {
+    background-color: #f2f2f2;
+  }
+  .options{
+    float: inline-end;
+
+  }
+
+  .row-with-icon {
+    display: flex;
+
+  }
+  
+  .row-with-icon td:last-child {
+    margin-left: auto;
+    
+  }
+
+  
+  .descripcion {
+    max-height: 100px; /* Ajusta la altura máxima según tus necesidades */
+    overflow-y: auto;
+    white-space: nowrap; /* Esto es opcional, evitará que el texto se divida en varias líneas */
+  }
+  
+  @media (max-width: 768px) {
+    .descripcion {
+      max-height: 60px; /* Altura máxima para dispositivos móviles */
+    }
+  }
+
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  .descripcion {
+    max-width: 200px; /* Ajusta el ancho máximo según sea necesario */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .table thead th {
+    position: sticky;
+    top: 0;
+    background: #fff; /* Color de fondo para el encabezado */
+    z-index: 1;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .pagination__link {
+    margin: 0 5px;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .pagination__link--active {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .pagination__link--disabled {
+    color: #ccc;
+  }
+  
